@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="321dp"
+        android:layout_height="170dp"
+        android:text="@string/please_enter_the_temporary_password"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_registration_tempPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <EditText
+        android:id="@+id/edit_registration_tempPass"
+        android:layout_width="243dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:hint="temp password"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="212dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="20dp"
+        android:text="Finish Registration"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_register_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_register_back"
+        android:layout_width="212dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="120dp"
+        android:text="Back"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
